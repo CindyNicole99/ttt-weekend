@@ -1,23 +1,81 @@
 body {
-    background-color: gray;
-	/* Use a system font, if none are available use an available sans-sarif   font */
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-		Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-image: url(https://murals-weblinc.netdna-ssl.com/product_images/cotton-candy-clouds-mural-wallpaper-77676187/5ecd453c585ab7011b49b210/product_large_image.jpg?c=1590510908);
+  background-size: cover;
+/* Use a system font, if none are available use an available sans-sarif   font */
+font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+margin: 0;
+height: 100vh;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 20px;
+  text-align: center;
+  color: skyblue;
+  text-shadow: 0 0 15px pink;
+}
+
+h2 {
+  font-family: 'DM Sans', sans-serif;
+  padding: 0; 
+  line-height: 30px;
+  margin-bottom:20px;
+  color: skyblue;
 }
 
 section.board {
-  display: grid;
-  grid-template-rows: repeat(3, 10vmin);
-  grid-template-columns: repeat(3, 10vmin);
-  grid-gap: 0vmin;
+display: grid;
+grid-template-rows: repeat(3, 10vmin);
+grid-template-columns: repeat(3, 10vmin);
+text-shadow: 0 0 15px pink;
+}
+
+.board-square {
+  border: 2px solid pink;
+  font-size: 8vmin;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#message {
+  font-size: 25px;
+  text-align: center;
+}
+
+#whole-board {
+  margin: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lavender;
+  padding: 80px;
+  border-radius: 10;
+}
+
+.reset-btn {
+  margin: 20px;
+  align-items: center;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif
+}
+
+button {
+  color: black;
+  background-color:skyblue;
+  padding: 10px;
+  line-height: 20px;
+  margin-top: 20px auto;
+  box-shadow: 1px 1px grey; 
 }
 
 div {
-  border: 3px solid black;
+  border: 3px solid lavender;
+  border-radius: 10px;
   font-size: 8vmin;
   text-align: center;
   vertical-align: middle;
